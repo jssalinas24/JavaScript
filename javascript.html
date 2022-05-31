@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba</title>
+</head>
+<body>
+    <script>
+        //var number = 12;
+        //console.log(number);
+        //for(var i=1; i<=number; i++){
+            //console.log(12);
+        //}
+
+        //var n = prompt('Ingrese número a llegar');
+        //for(var i=1; i<=n; i++){
+            //console.log(i);
+            //document.write(i, "<br>");
+        //}
+
+        //var number = 100;
+        //for(var i=2; i<=number; i+=2){
+            //console.log(i);
+            //document.write(i, "<br>");
+        //}
+
+        //var edad = prompt('Ingrese la edad');
+        //if(edad >= 18){
+            //console.log(edad);
+            //document.write('Es mayor de edad');
+        //}else{
+            //console.log(edad);
+            //document.write('Es menor de edad');
+        //}
+
+        var primo = prompt('Ingrese un número');
+        function es_primo(primo){
+        for(var i=2; i<primo-1; i++){
+            if(primo % i==0){
+                return false;
+            }
+        }
+        return true;
+        }
+        for(var i=1; i<=primo; i++){
+            if(es_primo(i)){
+                console.log('El número es primo');
+                document.write('El número es primo');
+            }else{
+                console.log('El número es no primo');
+                document.write('El número no es primo');
+            }
+        }
+
+    </script>
+</body>
+</html> 
